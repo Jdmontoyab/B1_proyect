@@ -1,0 +1,201 @@
+main {
+    width: 320px;
+
+    // Introducción
+
+    .intro {
+        padding: 29px 16px 0;
+        //padding-top: 29px;
+        //padding-left: 16px;
+
+        display: flex;
+        flex-direction: column;
+        
+        h1 {
+            @extend %h1Mobile;
+                
+            .sub {
+                text-decoration: line-through;
+            }
+        }
+        
+        p {
+            @extend %pMobile;
+            margin-top: 16px;
+        }
+        
+        a {
+            @extend %aBtn;
+        }
+    }
+
+    // Episodios
+
+    .contSecEpi {
+        margin-top: 24px;
+
+        display: grid;
+        grid-template-rows: 10% 80% 10%;
+
+        .top {
+            background: $colorEpi1;
+
+            .svgTop {
+                width: 100%;
+                height: 10vw;
+            }
+        }
+
+        h1 {
+            @extend %h1Mobile;
+            color: $bg;
+            padding-top: 36px;
+            padding-bottom: 21px;
+            padding-left: 16px;
+            background: $colorEpi1;
+        }
+
+        .contPods {
+            background-image: $colorGradient;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .pods {
+                margin-bottom: 8px;
+
+                &:last-child {
+                    margin-bottom: 100px;
+                }
+
+                iframe {
+                    width: 100%;
+                    height: 232px;
+                    border: none;
+                }
+            }
+        }
+
+        .bottom {
+            background: $bg;
+
+            .svgBottom {
+                width: 100%;
+                height: 10vw;
+            }
+        }
+    }
+
+    // Nosotros, superposición de elementos
+
+    .venimos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 16px;
+
+        .imgPhone {
+            width: 360px;
+            height: 519px;
+            transform: translate(-35px, -100px);
+
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 90%;
+                height: 100%;
+                margin: auto;
+            }
+        }
+
+        .textPhone {
+            h1 {
+                @extend %h1Mobile;
+                margin-top: -77px;
+            }
+    
+            p {
+                @extend %pMobile;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    // Invitados
+
+    .invitados {
+        h1 {
+            @extend %h1Mobile;
+            margin: 16px;
+            margin-top: 54px;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 320px;
+                height: 243px;
+            }  
+        }
+
+        .contLogos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .logos {
+                margin-top: 37px;
+    
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    font-family: $IBMPlexSans;
+                    color: $colorActive;
+                    padding-top: 13px;
+                    padding-bottom: 49px;
+                }
+            } 
+        }
+
+        .top {
+            background: $colorEpi1;
+
+            .svgTop {
+                width: 100%;
+                height: 10vw;
+            }
+        }
+
+        // Novedades
+
+        .novedades {
+            padding: 10px 16px 0;
+            background: $colorEpi1;
+            
+            display: flex;
+            flex-direction: column;
+            //align-items: center;
+
+            h1 {
+                @extend %h1Mobile;
+                color: $bg;
+                margin-top: 25px;
+                text-align: center;
+            }
+
+            a {    
+                @extend %aBtn;
+                margin-bottom: 67px;
+            }
+        }
+    }
+}

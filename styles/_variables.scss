@@ -1,0 +1,58 @@
+// Colores
+
+$bg: #fff;
+$bg-menu: #0000EC;
+$colorHover: #00F3BB;
+$colorActive: #060A24;
+$colorHT1: #0000FE;
+$colorHT2: #00F0B8;
+$colorEpi1: #0000FF;
+$colorEpi2: #0000A3;
+$colorGradient: linear-gradient($colorEpi1 0%, $colorEpi2 100%);
+
+// Fuentes
+
+$IBMPlexSans: 'IBM Plex Sans', sans-serif;
+$IBMPlexMono: 'IBM Plex Mono', monospace;
+
+// Tamaños
+
+%h1Mobile {
+    font-size: 36px;
+    line-height: 42px;
+    font-family: $IBMPlexSans;
+    color: $colorActive;
+}
+
+%pMobile {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: $IBMPlexMono;
+    color: $colorActive;
+}
+
+// Botón
+
+%aBtn {
+    background: $colorHover;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    font-family: $IBMPlexMono;
+    color: $colorActive;
+    text-decoration: none;
+    margin-top: 36px;
+    padding: 13px 0;
+    cursor: pointer;
+
+    &:hover {
+        color: $bg;
+        background: linear-gradient(to left, $colorHT1, $colorHT2);
+    }
+}
+
+
+
+
+

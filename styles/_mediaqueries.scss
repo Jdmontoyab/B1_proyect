@@ -1,0 +1,246 @@
+@media screen and (min-width: 321px) {
+    header {
+        max-width: 1440px;
+        width: 1440px;
+        height: 80px;
+
+        .mTop {
+            height: 100%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 36px;
+                height: 36px;
+                margin-left: 100px;
+            }
+
+            label {
+                display: none;
+            }
+
+            nav {
+                height: 100%;
+                background: $bg;
+
+                display: flex;
+    
+                ul {
+                    height: 100%;
+                    margin-left: 0;
+    
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: space-around;
+                    
+                    li {
+                        list-style: none;
+                        margin-left: 48px;
+                        padding-top: 26px;
+
+                        &:first-child {
+                            padding-top: 26px;
+                        }
+    
+                        &:last-child {
+                            padding-right: 100px;
+                        }
+    
+                        &:hover {
+                            cursor: pointer;
+                            background-color: unset;
+                        }
+
+                        a {
+                            color: $colorActive;
+                            padding: unset;
+        
+                            &:hover {
+                                color: $colorHover;
+                                text-decoration: line-through;
+                            }
+        
+                            &:active {
+                                color: $colorActive;
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        max-width: 1440px;
+        width: 1440px;
+
+        // Introducción
+
+        .intro {
+            padding-top: 120px;
+            padding-left: 200px;
+            
+            h1 {
+                font-size: 64px;
+                line-height: 84px;
+    
+                .point {
+                    color: $bg-menu;
+                    font-size: 64px;
+                    line-height: 84px;
+                }
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                visibility: hidden;
+                width: 628px;
+    
+                &::before {
+                    content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
+                    visibility: visible;
+                }
+            }
+
+            a {
+                margin: 56px 1014px 151px 0;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        .contSecEpi {
+            h1 {
+                font-size: 48px;
+                line-height: 62px;
+                padding-left: 200px;
+            }
+
+            .contPods {
+                width: 100%;
+                padding: 0 100px;
+
+                flex-flow: row wrap;
+                align-items: center;
+
+                .pods {
+                    margin-bottom: 0;
+                    width: 584px;
+                    padding-bottom: 72px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        // Nosotros, superposición de elementos
+
+        .venimos {
+            height: 60%;
+            margin: 0;
+            margin-bottom: -180px;
+
+            flex-direction: row;
+            align-content: space-between;
+            
+            .imgPhone {
+                width: 451.6px;
+                height: 660px;
+                margin-left: 200px;
+                transform: translateY(-185px);
+            }
+
+            .textPhone {
+                width: 464px;
+                height: 204px;
+                margin-left: 60px;
+                margin-right: 176px;
+                padding-top: 84.4px;
+
+                h1 {
+                    font-size: 48px;
+                    line-height: 62px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        // Invitados
+
+        .invitados {
+            h1 {
+                font-size: 48px;
+                line-height: 62px;
+                margin-left: 200px;
+                margin-bottom: 36px;
+            }
+
+            .images {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                img {
+                    width: 33.33%;
+                    height: 364px;
+                } 
+            }
+
+            .contLogos {
+                width: 80%;
+                margin: auto;
+
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+            }
+
+            // Novedades
+
+            .novedades {
+                padding-top: 50px;
+                text-align: center;
+
+                h1 {
+                    font-size: 48px;
+                    line-height: 62px;
+                    margin: 0;
+                }
+
+                a {
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: 36px 547px 151px;
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 1440px;
+
+        .footer {
+            flex-direction: row;
+            justify-content: space-between;
+
+            p {
+                margin-left: 100px;
+            }
+
+            .redes {
+                width: 20%;
+            }
+        }
+    }
+}
